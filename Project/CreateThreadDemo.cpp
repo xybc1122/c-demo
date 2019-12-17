@@ -35,6 +35,7 @@ DWORD WINAPI ThreadProcCon(LPVOID lpParam) {
 }
 //创建线程
 void CreateThreadTest() {
+
 	heventPro = CreateEventProTest();
 	heventCon = CreateEventConTest();
 

@@ -126,7 +126,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CreateFileDemo.cpp" />
     <ClCompile Include="CreateProcessDemo.cpp" />
+    <ClCompile Include="CreateRemoteThreadDemo.cpp" />
     <ClCompile Include="CreateThreadDemo.cpp" />
     <ClCompile Include="EventDemo.cpp" />
     <ClCompile Include="Log.cpp" />
@@ -134,15 +136,19 @@
     <ClCompile Include="Math.cpp" />
     <ClCompile Include="ProcessInfo.cpp" />
     <ClCompile Include="ThreadInfo.h" />
+    <ClCompile Include="TransferDll.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CreateFileDemo.h" />
     <ClInclude Include="CreateProcessDemo.h" />
+    <ClInclude Include="CreateRemoteThreadDemo.h" />
     <ClInclude Include="CreateThreadDemo.h" />
     <ClInclude Include="EventDemo.h" />
     <ClInclude Include="Help.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="ProcessInfo.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="TransferDll.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

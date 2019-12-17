@@ -7,6 +7,9 @@
 #include <locale.h>
 #include "ProcessInfo.h"
 #include "CreateThreadDemo.h"
+#include "CreateFileDemo.h"
+#include "TransferDll.h"
+#include "CreateRemoteThreadDemo.h"
 
 
 int Multipyl(int a,int b);
@@ -90,9 +93,21 @@ void mergeSort(T arr[],int n) {
 
 
 int main() {
+	//创建远程线程
+	CreateRemoteThreadTest();
+
+
+	//隐式调用
+	//DllImplicit();
+
+    //动态调用dll 测试
+	//DllTest();
+
+	//创建文件 没实现
+	//CreateFileTest();
 
 	//创建线程
-	CreateThreadTest();
+	//CreateThreadTest();
 
 	//获得进程PID
 	/*ProcessInfo* p = new ProcessInfo();

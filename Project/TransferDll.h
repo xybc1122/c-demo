@@ -1,0 +1,7 @@
+
+
+
+
+void  DllTest();
+
+void  DllImplicit();
