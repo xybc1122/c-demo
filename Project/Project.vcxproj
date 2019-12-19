@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClCompile Include="CreateFileDemo.cpp" />
     <ClCompile Include="CreateProcessDemo.cpp" />
+    <ClCompile Include="CreateRemoteControl.cpp" />
     <ClCompile Include="CreateRemoteThreadDemo.cpp" />
     <ClCompile Include="CreateThreadDemo.cpp" />
     <ClCompile Include="EventDemo.cpp" />
@@ -141,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="CreateFileDemo.h" />
     <ClInclude Include="CreateProcessDemo.h" />
+    <ClInclude Include="CreateRemoteControl.h" />
     <ClInclude Include="CreateRemoteThreadDemo.h" />
     <ClInclude Include="CreateThreadDemo.h" />
     <ClInclude Include="EventDemo.h" />

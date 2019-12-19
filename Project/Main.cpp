@@ -10,6 +10,7 @@
 #include "CreateFileDemo.h"
 #include "TransferDll.h"
 #include "CreateRemoteThreadDemo.h"
+#include "CreateRemoteControl.h"
 
 
 int Multipyl(int a,int b);
@@ -93,14 +94,31 @@ void mergeSort(T arr[],int n) {
 
 
 int main() {
-	//创建远程线程
-	CreateRemoteThreadTest();
+
+	//进程控制 demo
+	RemoteControlTest();
+
+
+
+
+	//远程线程注入
+	/*std::string str = "C:\\Users\\Administrator\\Desktop\\test\\Dll.dll";
+	LoadDll(8416, (char*)str.c_str());*/
+
+
+	//创建远程线程 未验证 暂时还不知道如何获得线程函数地址
+	//进程pid
+	//DWORD dwProcessId = 13976;
+	////线程函数地址
+	//DWORD dwProcAddr = 0x1111;
+	//CreateRemoteThreadTest(dwProcessId, dwProcAddr);
+
 
 
 	//隐式调用
 	//DllImplicit();
 
-    //动态调用dll 测试
+    //动态调用dll 
 	//DllTest();
 
 	//创建文件 没实现
