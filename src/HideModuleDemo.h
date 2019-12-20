@@ -1,0 +1,4 @@
+
+
+
+void hudeModule(char* szDllName);

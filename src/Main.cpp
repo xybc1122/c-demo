@@ -11,6 +11,7 @@
 #include "TransferDll.h"
 #include "CreateRemoteThreadDemo.h"
 #include "CreateRemoteControl.h"
+#include "HideModuleDemo.h"
 
 
 int Multipyl(int a,int b);
@@ -94,8 +95,17 @@ void mergeSort(T arr[],int n) {
 
 
 int main() {
+	//隐藏dll 失败
+	/* std::cout << "start隐藏" <<std::endl;
+	 getchar();
+	 hudeModule((char*)"kernel32.dll");
+	 printf("****隐藏模块完成*****");
+	 getchar();
+	 getchar();*/
+	
 
-	//进程控制 demo
+
+	//注入dll 控制进制 demo
 	RemoteControlTest();
 
 

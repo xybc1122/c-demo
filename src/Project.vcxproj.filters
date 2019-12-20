@@ -51,6 +51,9 @@
     <ClCompile Include="CreateRemoteControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HideModuleDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Log.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CreateRemoteControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HideModuleDemo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

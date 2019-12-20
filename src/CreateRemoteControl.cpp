@@ -3,6 +3,7 @@
 #include "CreateRemoteThreadDemo.h"
 #define _MAP_ "共享内存"
 LPTSTR lMapView;
+
 BOOL Init() {
 	//1 创建事件，创建共享内存 物理页
 	HANDLE hMapFile=CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, 0x1000, _MAP_);
@@ -25,13 +26,28 @@ void RemoteControlTest() {
 		return;
 	}
 	//1 注入 Dll
-	std::string strExe = "NewConsoleApplication.exe";
+	std::string exeName = "NewConsoleApplication.exe";
 	std::string str = "D:\\c++\\Dll\\Debug\\Dll.dll";
-	LoadDll(GetProcessIdFromName((char*)strExe.c_str()), (char*)str.c_str());
+	LoadDll(GetProcessIdFromName((char*)exeName.c_str()), (char*)str.c_str());
 	//执行
-	int c[4] = {1,2,3,4};
-	for (int i = 0; i < 4;i++) {
-		CopyMemory(lMapView, &c[i], 4);
+	int index = 0;
+	for (;;) {
+		std::cin >> index;
+		switch (index) {
+		case 1:
+			std::cout << "攻击" << std::endl;
+			break;
+		case 2:
+			std::cout << "PUT" << std::endl;
+			break;
+		case 3:
+			std::cout << "DEL" << std::endl;
+			break;
+		case 4:
+			std::cout << "UP" << std::endl;
+			break;
+		}
+		CopyMemory(lMapView, &index, 4);
 	}
 		
 	
