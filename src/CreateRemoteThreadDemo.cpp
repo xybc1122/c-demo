@@ -72,9 +72,9 @@ void LoadDll(DWORD dwProcessId, char* pathName) {
 		CloseHandle(hProcess);
 		return;
 	}
-
 	CloseHandle(hThread);
 
+	std:: cout << "×¢Èësuccess" << std::endl;
 
 }
 

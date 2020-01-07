@@ -12,6 +12,7 @@
 #include "CreateRemoteThreadDemo.h"
 #include "CreateRemoteControl.h"
 #include "HideModuleDemo.h"
+#include "ShellCode.h"
 
 
 int Multipyl(int a,int b);
@@ -92,9 +93,10 @@ void mergeSort(T arr[],int n) {
 
 
 }
-
-
+int start = 123456789;
 int main() {
+	//ShellCodeTest();
+
 	//隐藏dll 失败
 	/* std::cout << "start隐藏" <<std::endl;
 	 getchar();
@@ -106,14 +108,14 @@ int main() {
 
 
 	//注入dll 控制进制 demo
-	RemoteControlTest();
+	//RemoteControlTest();
 
 
 
 
 	//远程线程注入
-	/*std::string str = "C:\\Users\\Administrator\\Desktop\\test\\Dll.dll";
-	LoadDll(8416, (char*)str.c_str());*/
+	std::string str = "D:\\c++\\hook_dll\\Debug\\hook_dll.dll";
+	LoadDll(14144, (char*)str.c_str());
 
 
 	//创建远程线程 未验证 暂时还不知道如何获得线程函数地址
